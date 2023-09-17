@@ -1,0 +1,17 @@
+header h4{
+    text-align: center;
+    font-size: small;
+     color: #333;
+}
+header hr{
+    width: 40px;height: 3px;background-color: red;
+}
+header h1{
+    text-align: center;font-size:xx-large;;
+}
+body p{
+    text-align: justify; font-size: larger;
+}
+header h3{
+    text-align: center;font-family: 'Times New Roman', Times, serif;
+}

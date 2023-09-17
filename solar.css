@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+.universe {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: black;
+}
+
+/* Create stars using pseudo-elements */
+.universe::before, .universe::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+}
+
+.universe::before {
+    animation: twinkle 3s infinite;
+}
+
+.universe::after {
+    animation: twinkle 2s infinite;
+}
+
+/* Animation for twinkling effect */
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    position: relative;
+    animation: spin 10s linear infinite;
+}
+
+.planet {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.orbit-1 { animation: orbit 2s linear infinite; }
+.orbit-2 { animation: orbit 4s linear infinite; }
+.orbit-3 { animation: orbit 6s linear infinite; }
+
+.planet-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.mercury { background-color: #E0E0E0; animation: spin-reverse 2s linear infinite; }
+.venus { background-color: #FFA500; animation: spin 4s linear infinite; }
+.earth { background-color: #00BFFF; animation: spin 6s linear infinite; }
+
+.moon {
+    width: 20px;
+    height: 20px;
+    background-color: #D3D3D3;
+    border-radius: 50%;
+    position: absolute;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+@keyframes orbit {
+    0% { transform: translateX(0) }
+    100% { transform: translateX(-100px) }
+}

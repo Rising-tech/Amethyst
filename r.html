@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="r.css">
+    <link rel="stylesheet" href="r.js">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('8162788_25235.jpg');
+            background-size:cover;
+            background-blur: 5px; /* Adjust the blur level */
+            background-color: #ae8aaf2e; /* Adjust the background color and opacity */
+            background-blend-mode: multiply; /* Adjust blend mode as needed */
+            font-family: "Poppins", sans-serif;
+            color: #444;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Adjust content background color and opacity */
+        }
+        h1 {
+            margin: 50px 0 30px;
+            text-align: center;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+<h1>Frequently Asked Questions</h1>
+<div class="faq-container">
+  <div class="faq">
+    <h3 class="faq-title">
+        Why are FAQs important on websites? 
+    </h3>
+    <p class="faq-text">FAQs help users find answers to common questions without having to contact customer support. They improve user experience and reduce the workload on customer service teams.</p>
+</p>
+    <button class="faq-toggle">
+      <i class="fas fa-angle-down"></i>
+    </button>
+  </div>
+
+  <div class="faq active">
+    <h3 class="faq-title">
+        Can FAQs improve SEO for my website?
+    </h3>
+    <p class="faq-text">Yes, well-structured FAQ content can improve your website's SEO by providing valuable information and targeting specific keywords users might search for.
+    </p>
+    <button class="faq-toggle">
+      <i class="fas fa-angle-down"></i>
+    </button>
+  </div>
+
+  <div class="faq">
+    <h3 class="faq-title">
+        What should be included in a FAQ section?
+    </h3>
+    <p class="faq-text">A FAQ section should include questions that users frequently ask about your product, service, or topic. Each question should have a clear and concise answer.</p>
+    <button class="faq-toggle">
+      <i class="fas fa-angle-down"></i>
+    </button>
+  </div>
+
+  <div class="faq">
+    <h3 class="faq-title">
+        Can I include images or videos in my FAQ?
+    </h3>
+    <p class="faq-text">Yes, you can include multimedia content to enhance your answers, especially if it helps users understand a concept or process better.</p>
+    <button class="faq-toggle">
+      <i class="fas fa-angle-down"></i>
+    </button>
+  </div>
+  <div class="faq">
+    <h3 class="faq-title">
+        How do I decide which questions to include in my FAQ?
+    </h3>
+    <p class="faq-text">Determine the questions your users commonly ask through customer feedback, support inquiries, or analytics data. Focus on questions that can help users make decisions or use your product/service effectively.</p>
+    <button class="faq-toggle">
+      <i class="fas fa-angle-down"></i>
+    </button>
+  </div>
+</div>
+</div>
+<!--JavaScript code-->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const buttons = document.querySelectorAll(".faq-toggle");
+      buttons.forEach((button) => {
+        button.addEventListener("click", () =>
+          button.parentElement.classList.toggle("active")
+        );
+      });
+    });
+  </script>
+  </body>
+  </html>
